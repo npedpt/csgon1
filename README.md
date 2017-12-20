@@ -1,14 +1,6 @@
-# caseopening by http://steamcommunity.com/id/tuz1k/ 
-I'll not be refunding to those who I sold this script 3-4 month ago why? Because most of you already made profit and the reaso I'm selling is because there is someone 
-else who calls him self a dev and he's selling this type of script but he is mostly scamming people that's why I decided to share this code. I know most people 
-would not like it because it's PHP but what ever guys, its free.
-  
-  YOUTUBE TUTORIAL HOW TO SETUP!
-  https://www.youtube.com/watch?v=oTUMAUv7HLc  
-  this is tutorial on how to set up this script.
-
-
-IF YOU FACE PROBLEMS CONTACT ME ON DISCORD: https://discord.gg/8KsjVGH
-
-IF YOU HAVE ANY QUESTIONS MAKE  ISSUE
+# csgon1 roulette site done  by http://steamcommunity.com/id/tuz1k/ 
+This script is really simple to install after you install hnix configure the routing and install php > 5 
+Then moove to socket directory and run "npm i " which will install all your dependencies
+If you face any problems you can join my discord and I will be happy to assist you 
+# Discord is here - https://discord.gg/8KsjVGH
 
