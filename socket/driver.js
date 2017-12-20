@@ -240,7 +240,7 @@ client.logOn(details); //bot login
 connection.connect(); //db connect
 
 var site_bots = [manager];
-var bots_list = {'76561198352064935': manager};
+var bots_list = {'76561198338314767': manager};
 
 /*                                                                                                                                                              */
 /*                                                                                SITE PART                                                                     */
