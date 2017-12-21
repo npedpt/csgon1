@@ -1,0 +1,166 @@
+nav .balance, :after, :before {
+    box-sizing: initial;
+}
+nav .balance .value, :after, :before {
+    box-sizing: initial;
+	    margin-top: 12;
+}
+.section-menu {
+    text-align: center;
+	background: rgba(37,37,37,.6) !important;
+    border-bottom: 2px solid #161616 !important;
+}
+
+.page-content {
+    width: calc(100% - 0px);
+    height: 100vh;
+    float: right;
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.sidebar-nav {
+    width: 265px;
+    height: 50%
+    z-index: 99;
+    position: fixed;
+    top: initial;
+    left: 0;
+    background: #0e1319;
+    overflow-x: hidden;
+	box-shadow: none;
+}
+
+.sidebar-nav .menu .header {
+    color: #eee;
+    background: #0a0e11;
+    position: relative;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Titillium",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar-nav {
+    width: 265px;
+    position: fixed;
+    z-index: 99;
+    top: 220px;
+    left: 0;
+    background: transparent;
+    overflow-x: hidden;
+    box-shadow: none;
+	height: 323;
+}
+
+.sidebar-nav .menu .inner .menu-item {
+    border-right: 5px solid rgba(255, 204, 1, 0.50);
+    color: #fff;
+    transition: border .3s;
+    font-family: "Titillium",sans-serif;
+    cursor: pointer;
+    background: rgba(29, 29, 29, 0.65);
+}
+
+.sidebar-nav .menu .inner .menu-item .icon {
+    background: #161616;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    padding: 5px;
+    display: inline-table;
+}
+.sidebar-nav .menu {
+	border-bottom:2px solid #fb5616;
+}
+nav .navbar-player .player-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    margin: 0 10px;
+    margin-left: -40px;
+}
+
+nav .navbar-player .player-text {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav .balance .value {
+    width: 25%;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 700;
+    height: 33px;
+    font-size: 20px;
+}
+
+.items-container .items .item .item-name {
+    font-size: 11px;
+    color: #bbb;
+    text-align: right;
+    margin-right: 5px;
+    height: 32px;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.circleButton {
+    display: inline-block;
+    color: #fefefe;
+    font-size: 16px;
+    margin-right: 0px !important;
+}
+
+nav .balance {
+    background: rgba(37,37,37,.6);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 38px;
+    padding: 5px;
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.chat .chat-header .chat-info {
+    height: 22px;
+    margin-top: 16px;
+    float: right;
+    margin-right: -40px;
+    cursor: pointer;
+}
+
+.sidebar-nav .menu .inner .menu-item {
+    border-right: 5px solid rgba(255, 204, 1, 0.50);
+    color: #fff;
+    transition: border .3s;
+    font-family: "Montserrat",sans-serif;
+}
+.online1 {
+	width: 100%;
+    max-width: 350;
+    min-width: 265;
+    display: -ms-flexbox;
+    text-align: center;
+    height: 40px;
+    border-top: 1px solid #242424;
+    border-bottom: 2px solid #fb5616;
+    background: rgba(22, 22, 22, 0.85);
+    margin-top: auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}

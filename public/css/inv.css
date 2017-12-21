@@ -1,0 +1,43 @@
+.items-container .confirm-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: right;
+    height: 70px;
+    width: 160px;
+    border-radius: 5px;
+    color: #15181f;
+    background: rgba(251, 88, 24, 1);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0px solid transparent;
+    transition: all .3s;
+    font-family: Titillium,sans-serif;
+    font-size: 20px;
+}
+
+.items-container .confirm-button:hover {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: right;
+    height: 70px;
+    width: 160px;
+    border-radius: 5px;
+    color: #15181f;
+    background: rgba(251, 88, 24, 0.5);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0px solid transparent;
+    transition: all .3s;
+    font-size: 20px;
+    font-family: Titillium,sans-serif;
+}

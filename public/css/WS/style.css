@@ -1,0 +1,311 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-center {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  margin-top: 20vh;
+  vertical-align: center;
+}
+
+.main-container {
+    background-image: url(http://i.imgur.com/O0AWXqz.png)!important;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.footer .data {
+    padding: 12.5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    font-family: Titillium,sans-serif;
+    transition: all .5s ease;
+}
+
+.footer .data .copyright {
+    font-size: 20px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #fefefe 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    font-family: Titillium,sans-serif;
+	transition: all .5s ease;
+}
+
+.footer .data .social i {
+    font-size: 20px;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+	transition: all .5s ease;
+}
+
+.footer .data .social i:hover {
+    font-size: 20px;
+    background-image: -webkit-linear-gradient(top, #fefefe 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+	transition: all .5s ease;
+}
+
+.footer .data .legal {
+    font-size: 15px;
+    font-weight: 800;
+	transition: all .5s ease;
+}
+
+.footer .data .legal a {
+    margin-right: 0px;
+	font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    font-family: Titillium,sans-serif;
+	transition: all .5s ease;
+}
+
+.footer .data .legal a:hover {
+    background-image: -webkit-linear-gradient(top, #fefefe 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+	transition: all .5s ease;
+}
+
+.footer {
+    text-transform: uppercase;
+	border-bottom: 0px solid transparent !important;
+	transition: all .5s ease;
+}
+
+.footer .data .social i {
+    font-size: 20px;
+}
+
+.csgoturbo-logo {
+  -webkit-animation: fadein 2s, pulse 3s infinite;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rebrand {
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+}
+
+.turbo {
+  padding-top: 150px;
+}
+
+img {
+  height: 235px;
+  margin: auto;
+}
+
+.csgoturbo-logo {
+    margin-top: -55px;
+    padding-right: 20px;
+    margin-left: 115px;
+}
+
+.turbo h1 {
+    font-weight: 300;
+    font-size: 27px;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 140%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 10px;
+    font-family: Titillium,sans-serif;
+}
+
+.turbo h4 {
+  font-weight: 400;
+  font-size: 10px;
+  color: white;
+}
+
+.time-main {
+  padding-right: 10%;
+}
+
+.countdown {
+    padding-top: 5%;
+    margin-left: 18%;
+}
+
+.time {
+    font-size: 60px;
+    font-weight: 300;
+    background-image: -webkit-linear-gradient(top, #fefefe 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    font-family: Titillium,sans-serif;
+}
+
+.time-t {
+    font-size: 17px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    font-family: Titillium,sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+  .turbo img {
+    margin-bottom: 30px;
+  }
+  .csgoturbo-logo {
+    height: 80px;
+    margin-top: -10px;
+  }
+  .turbo h1 {
+    font-weight: 600;
+    font-size: 20px;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 140%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .turbo h4 {
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+  }
+  .time-main {
+    padding-right: 5%;
+    ;
+  }
+  .time {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .time-t {
+    font-size: 10px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .turbo img {
+    height: 140px;
+    margin-top: -10px;
+    margin-left: 5%;
+    
+  }
+  .csgoturbo-logo {
+    padding-right: 45%;
+  }
+  .turbo h1 {
+    font-weight: 600;
+    font-size: 15px;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 140%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 5px;
+  }
+  .main-center{
+  margin-top: 5vh;
+  }
+  .turbo h4 {
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+  }
+  .time-main {
+    padding-right: 30px;
+  }
+  .time {
+    font-weight: 100;
+    font-size: 50px;
+  }
+  .time-t {
+    font-size: 10px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .turbo img {
+    height: 100px;
+    margin-bottom: 30px;
+  }
+  .csgoturbo-logo {
+    margin-top: -10px;
+    padding-right: 20px;
+  }
+  .turbo h1 {
+    font-weight: 600;
+    font-size: 20px;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 140%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 5px;
+  }
+  .turbo h4 {
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+  }
+  .time {
+    font-weight: 100;
+    font-size: 25px;
+  }
+  .time-t {
+    font-size: 15px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #ffcc01 0%, rgba(44, 62, 80, 0.88) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+  }
+}

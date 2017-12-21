@@ -1,0 +1,448 @@
+<html lang="en">
+    <head>
+
+
+        <meta charset="UTF-8">
+
+        <title>Roulette :: CSGON1.COM</title>
+        <meta property="og:title" content="CSGON1.COM" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta name="description" content="Play with Your Friends and Win Skins!">
+		<meta name="keywords" content="counter,strike,csgo,csgoCSGON1.COM,CSGON1.COM,csgo CSGON1.COM,CSGON1.COM,CSGON1.COMcsgo,roulette,skins,referral,earn,points,bet,win,shop,buy,sell,gun,knife,knives,best,most,platform,marketplace,high,roller,stake,social,gambling,gamble,affiliate">
+
+
+        <meta name="csrf-token" content="63rWLQI6W2YMswWrBZLCww00RRFrqaq8AjeJtALr" />
+        <meta name="language" content="en" />
+        <meta name="websocket" content="https://CSGON1.COM:8443" /> 
+        <meta name="game" content="roulette" />
+        <meta name="logged" content="@if (Auth::check()){{1}}@else{{0}}@endif" />
+        <meta name="steamid" content="@if (Auth::check()){{Auth::user()->steamid}}@endif" />
+        <meta name="username" content="@if (Auth::check()){{Auth::user()->username}}@endif"/>
+        <meta name="avatar" content="@if (Auth::check()){{Auth::user()->avatar}}@endif"/>
+        <meta name="token" content="{{$token}}"/>
+        <meta name="tradeURL" content="@if (Auth::check() && Auth::user()->tradeurl){{'https://steamcommunity.com/tradeoffer/new/?partner='.(substr(Auth::user()->steamid,7) - 7960265728).'&token='.Auth::user()->tradeurl}}@endif"/>
+        <meta name="time" content="{{$time}}"/>
+        
+        <meta name="viewport" content="width=1400, initial-scale=1">
+		<meta name="google-site-verification" content="1X4JxaLG_AM6F9u410Q6K4XL9HuqJjntjN3k8dmJ53E" />
+
+        <link rel="icon" type="image/png" href="/favicon.png" />
+
+		<link rel="stylesheet" href="/css/app.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<script src="/js/jquery-1.8.3.js"></script>
+		
+
+
+		
+    </head>
+<body>
+
+
+<nav class="navbar">
+<div id="sidebar-wrapper" style="background: #1A1D26;border-left: 0px solid transparent!important;">
+<ul id="sidebar-nav sidebarshow" class="sidebar-nav sidebarshow">
+<div class="toggle menu-toggle-button">
+      <i class="fa fa-angle-right" style="color: #15181F;font-weight: 700;"></i>
+</div>
+@if (Auth::check())
+<li class="account">
+<div class="avatar">
+<img src="{{Auth::user()->avatar}}">
+<span class="welcome1"> Welcome </span>
+</div>
+
+</li>
+@else
+<li class="test123">
+<a href="/auth/login">
+<div class="icon">
+<i class="fa fa-steam" aria-hidden="true"></i>
+</div>
+<span class="sidespan sidespanvisible">LOG IN</span>
+</a>
+</li>
+@endif
+<li>
+<a href="/">
+<div class="icon">
+<img src="/img/side-bar/roul.png" style="opacity: 1 !important;">
+</div>
+<span class="sidespan sidespanvisible">ROULETTE</span>
+</a>
+</li>
+<li>
+<a href="/coinflip">
+<div class="icon">
+<img src="/img/side-bar/flip.png">
+</div>
+<span class="sidespan sidespanvisible">COINFLIP</span>
+</a>
+</li>
+<li>
+<a href="/jackpot">
+<div class="icon">
+<img src="/img/side-bar/jackpot.png">
+</div>
+<span class="sidespan sidespanvisible">JACKPOT</span>
+</a>
+<li style="border-bottom: 4px solid #15181F;">
+<a href="/crash">
+<div class="icon">
+<img src="/img/side-bar/crash.png">
+</div>
+<span class="sidespan sidespanvisible">CRASH</span>
+</a>
+</li>
+@if (Auth::check())
+<li>
+<a href="/user/profile">
+<div class="icon">
+<img src="/img/side-bar/account.png">
+</div>
+<span class="sidespan sidespanvisible">PROFILE</span>
+</a>
+</li>
+<li style="border-bottom: 4px solid #15181F;">
+<a href="/user/referrals">
+<div class="icon">
+<img src="/img/side-bar/stats.png">
+</div>
+<span class="sidespan sidespanvisible">REFERRALS</span>
+</a>
+</li>
+<li>
+<a href="/user/deposit">
+<div class="icon">
+<img src="/img/side-bar/funds.png">
+</div>
+<span class="sidespan sidespanvisible">DEPOSIT</span>
+</a>
+</li>
+<li style="border-bottom: 4px solid #15181F;">
+<a href="/user/withdraw">
+<div class="icon">
+<img src="/img/side-bar/shop.png">
+</div>
+<span class="sidespan sidespanvisible">STORE</span>
+</a>
+</li>
+@endif
+<li>
+<a href="/faq">
+<div class="icon">
+<img src="/img/side-bar/support.png">
+</div>
+<span class="sidespan sidespanvisible">FAQ</span>
+</a>
+</li>
+@if (Auth::check())
+<li style="border-bottom: 4px solid #15181F;">
+<a href="/auth/logout">
+<div class="icon">
+<i class="fa fa-power-off"></i>
+</div>
+<span class="sidespan sidespanvisible">LOG OUT</span>
+</a>
+</li>
+@endif
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+<li>
+<a>
+<div class="icon">
+<i class="fa fa-power-ofx"></i>
+</div>
+</a>
+</li>
+</ul>
+</div>
+
+<div class="footer1" style="width: 75px;">
+      <div class="data">
+
+        <div class="online sidebarshow1"><div class="copyright"><img src="/img/icons-small/players.png"> <span class="players-online">0</span></div>
+</div>
+      </div>
+
+
+    </div>
+</nav>
+
+<div class="center">
+
+<div class="top-navigation">
+        <div class="circleButton sound-toggle-button"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+		@if (Auth::check())
+        <div class="circleButton1 balance" data-balance="{{Auth::user()->wallet}}"><a href="/user/deposit"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;</a> <span class="value">{{Auth::user()->wallet}}</span></div>
+		@endif
+</div>
+
+	
+    <div class="main-wrapper">
+        <main>
+                <div class="roulette">
+        <div class="controls">
+            <div class="color-select">
+                <button class="btn-multi active" data-value="red"> 
+                    <img class="red-select-button" src="/img/misc/coin-t.png">
+                </button>
+                <button class="btn-multi" data-value="green">
+                    <img class="green-select-button" src="/img/misc/coin-up.png">
+                </button>
+                <button class="btn-multi" data-value="black">
+                    <img class="black-select-button" src="/img/misc/coin-ct.png">
+                </button>
+            </div>
+            <div class="inputs-area">
+                <div class="buttons">
+                    <div class="button" data-action="clear">Clear</div>
+                    <div class="button" data-action="last">Last</div>
+                    <div class="button" data-action="100+"><span>+</span>100</div>
+                    <div class="button" data-action="1000+"><span>+</span>1K</div>
+                    <div class="button" data-action="10000+"><span>+</span>10K</div>
+                    <div class="button" data-action="1/2">1<span>/</span>2</div>
+                    <div class="button" data-action="x2"><span>X</span>2</div>
+                    <div class="button" data-action="max">Max</div>
+                </div>
+                <div class="amount">
+                    <label for="minesBet">Wager Amount: </label>
+                    <input id="minesBet" class="value" placeholder="Your amount..." />
+                </div>
+            </div>
+            <div class="play">
+                <button class="btn-play">Bet!</button>
+            </div>
+        </div>
+
+		<div class="spinner">
+		<div class="inner">
+        <div class="roulette-wheel-outer">
+            <div class="rolling">
+                <div class="rolling-inner">
+                    Connecting...
+                </div>
+            </div>
+            <div class="roulette-wheel">
+			<div class="fade-right"></div>
+			<div class="fade-left"></div>
+                <div class="roulette-caret-down-left"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+				<div class="roulette-caret-up-right"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+            </div>
+        </div>
+		</div>
+		</div>
+
+                <div class="balance-latest">
+            <div class="latest"></div>
+        </div>
+		<div class="crown-counter">Number of rolls since last Crown: <span class="crown-counter-span">0</span></div>
+		<div class="roulette-info">Round hash: ...</div>
+        <div class="bets">
+            <div class="bet-box red-bet">
+                <div class="bet-info">
+                    <div class="bet-label"><img class="red-select-button-small" src="/img/misc/coin-t.png"> Terrorists</div>
+                    <div class="total-bet"><span class="red-total total-bet-amount" data-value="0">0</span></div>
+                </div>
+                <div class="player-bets"></div>
+            </div>
+            <div class="bet-box green-bet">
+                <div class="bet-info">
+                    <div class="bet-label"><img class="green-select-button-small" src="/img/misc/coin-up.png"> CROWN!</div>
+                    <div class="total-bet"><span class="green-total total-bet-amount" data-value="0">0</span></div>
+                </div>
+                <div class="player-bets"></div>
+            </div>
+            <div class="bet-box black-bet">
+                <div class="bet-info">
+                    <div class="bet-label"><img class="black-select-button-small" src="/img/misc/coin-ct.png"> Counter Terrorists</div>
+                    <div class="total-bet"><span class="black-total total-bet-amount" data-value="0">0</span></div>
+                </div>
+                <div class="player-bets"></div>
+            </div>
+        </div>
+    </div>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSGON1.COM leader -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3420794838612068"
+     data-ad-slot="8331337638"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </main>
+    </div>
+</div>
+
+<div class="chat">
+	<div class="toggle chat-toggle-button">
+      <i class="fa fa-angle-left" style="color: #15181F;font-weight: 700;"></i>
+    </div>
+    <div class="chat-header chatheader0">
+        <div class="text">
+            CHAT
+        </div>
+    </div>
+    <div class="chat-header chatheader1 chatheaderhide">
+        <div class="text">
+            CHAT
+        </div>
+    </div>
+    <div class="chat-messages">
+    </div> 
+    @if (Auth::check())
+    <div class="send-area">
+                    <div class="input-area">
+                <input type="text" class="chat-input" placeholder="Your message..." maxlength="75" pattern="[A-Za-z0-9_./!?,$+-= ]{1,75}" required>
+                <div class="emots-button">
+                    <img src="/img/misc/emots-button.png">
+                </div>
+                <div class="emots"></div>
+            </div>
+            <img src="/img/chat-send-img.png" class="send-message">
+            </div>
+    @else
+    <div class="send-area">
+                    <a href="/auth/login" class="need-sign-in">
+                <img src="/img/misc/sign-in-for-chat.png">
+            </a>
+            </div>
+    @endif
+	<div class="footer" style="width: 303px;">
+      <div class="data">
+        <div class="social">
+          <a href="https://twitter.com/CSGO_N1" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="http://steamcommunity.com/groups/cs_gon1" target="_blank"><i class="fa fa-steam"></i></a>
+        </div>
+
+        <div class="copyright copyright0">&copy; CSGON1.COM 2017</div>
+        <div class="copyright copyright1 copyrighthide">&copy;</div>
+        <div class="legal">
+          <a href="/terms" target="_blank">Live Support</a>
+           <a class="chat-info" style="cursor: pointer;">Rules</a>
+        </div>
+
+      </div>
+
+
+    </div>
+</div>
+<div class="popup">
+    <div class="popup-inner">
+        <div class="popup-title">
+            RULES
+            <div class="popup-close">x</div>
+        </div>
+        <div class="content">
+            <p>1 - Things that will get you banned / muted:</p>
+            <ul>
+                <li>Spamming</li>
+                <li>Begging</li>
+                <li>Posting advertisement codes</li>
+                <li>Advertising other websites</li>
+                <li>Using a different language than english</li>
+                <li>Overusing capslock</li>
+                <li>Posting links to external sites</li>
+            </ul>
+            <p>2 - Please forward all Business Inquiries and Problems to: <b style="color: #fb5616;text-decoration: none !important;text-transform: none !important;">CSGON1mail@gmail.com</b></p>
+            <p>3 - This site is 18+ By playing you agree that you meet the legal age requirement.</p>
+            <p>4 - Keep swearing to a minimum, don’t flame other users.</p>
+			<p>5 - CSGON1.COM is not responsible for trade/account bans that may occur as a resulting of accepting items from our bots.</p>
+			<p>6 - CSGON1.COM assumes no responsibility for missed bets as a result of network latency or disconnections. Always ensure a stable connection before placing bets. Avoid placing important bets at the last second.</p>
+
+            <p><button class="popup-close">I UNDERSTAND</button></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src='/js/vendor.js'></script>
+<script src="/js/lang/en.js"></script>
+	<script src="/js/jquery.animateNumber.min.js"></script>
+    <script src="/js/roulette1.js"></script>
+    <script src="/js/HackTimerWorker.min.js"></script>
+    <script src="/js/HackTimer.silent.min.js"></script>
+@if((Auth::check()) && ((Auth::user()->rank == 'user') || (Auth::user()->rank == 'gold') || (Auth::user()->rank == 'diamond') || (Auth::user()->rank == 'streamer')))<script src="/js/chat.js"></script>
+@elseif((Auth::check()) && (Auth::user()->rank == 'siteAdmin'))<script src="/js/adminchat57NRz4.js"></script>
+@elseif((Auth::check()) && (Auth::user()->rank == 'siteMod'))<script src="/js/modchat57NRz4.js"></script>
+@elseif((Auth::check()) && (Auth::user()->rank == 'root'))<script src="/js/rootchat57NRz4.js"></script>
+@else<script src="/js/chat.js"></script>
+@endif
+<script src="/js/app.js"></script>
+<script type="text/javascript" src="//46.101.188.186/livechat/php/app.php?widget-init.js"></script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "CSGOTurbo",
+  "short_name": "CSGOTurbo",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "482941778795"
+}

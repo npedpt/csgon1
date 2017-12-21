@@ -1,0 +1,27 @@
+.roulette .player-bets .player-bet .user {
+    background: #161616 !important;
+    width: 40%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.roulette .player-bets .player-bet {
+    border-bottom: 2px solid #161616;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.roulette .player-bets .player-bet .amount {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50%;
+    background: #161616 !important;
+}

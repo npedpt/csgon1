@@ -1,0 +1,49 @@
+.roulette .balance-latest {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    background: rgb(29, 29, 29);
+    background: rgba(29, 29, 29, 0.85);
+    height: 70px;
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #ffcc01;
+}
+
+.roulette .player-bets .player-bet .user {
+    background: rgb(22, 22, 22) !important;
+    background: rgba(22, 22, 22, 0.50) !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.roulette .player-bets .player-bet {
+    border-bottom: 2px solid rgba(22, 22, 22, 0.50);
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.roulette .roulette-wheel-outer {
+    position: relative;
+    background: rgb(22, 22, 22);
+    background: rgba(22, 22, 22, 0.50);
+    border-bottom: 2px solid #ffcc01;
+    padding: 12px;
+}
+
+.roulette .player-bets .player-bet .amount {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50%;
+    background: rgb(22, 22, 22) !important;
+    background: rgba(22, 22, 22, 0.50) !important;
+}

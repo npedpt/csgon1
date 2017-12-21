@@ -1,0 +1,317 @@
+span.account-funds {
+    border-radius: 2px;
+    padding: 5px 8px 6px 4px;
+    background: #141c1f;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 10px;
+    position: relative;
+    bottom: 2px;
+    border: none;
+    font-size: 14px;
+}
+
+label {
+    font-weight: 700!important;
+}
+
+.top-line {
+    position: fixed;
+    width: 5000px;
+    left: 0;
+    top: 0;
+    border-top: 4px solid #ffcc01;
+    z-index: 963;
+}
+
+.chat .send-area .input-area .emots-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 44px;
+    background: #141c1f;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+
+.chat .send-area .input-area .emots {
+    background: #161d20;
+}
+
+.col-lg-6 {
+    width: 100%;
+}
+
+p {
+    text-align: left;
+    padding-top: 20px;
+    font-family: Titillium,sans-serif;
+    font-weight: 700;
+}
+
+.chat .chat-messages .chat-message:nth-child(2n+1) {
+    background: transparent;
+}
+
+.glyphicon {
+    float: left;
+    width: 60px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    background-color: #141c1f;
+}
+
+.opskins-badge {
+    display: inline-block;
+    padding: 7px 0;
+    background-color: #12181a;
+    width: 100%;
+}
+
+#footer {
+    position: fixed;
+    width: 200px;
+    bottom: 0;
+    background-color: #111618;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.chat .chat-messages .chat-message {
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 2px solid transparent;
+    background: #13191c;
+    padding: 7px;
+}
+
+.chat .chat-messages .chat-message:nth-child(2n+1) {
+    background: #141a1d;
+}
+
+.chat .send-area .input-area .chat-input {
+    width: calc(100% - 44px);
+    background: #192225;
+    border: 0;
+    outline: 0;
+    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #fefefe;
+    font-family: Titillium,sans-serif;
+    font-size: 14px;
+}
+
+.chat .send-area .input-area .emots {
+    background: #192225 !important;
+}
+
+.chat .send-area .input-area .emots-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 44px;
+    background: #192225;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    cursor: pointer;
+}
+
+.chat .send-area .input-area .emots {
+    display: none;
+    position: absolute;
+    bottom: 83px;
+    left: 20px;
+    width: 310px;
+    border: 2px solid #192225!important;
+    background: #1d232a;
+}
+
+.chat .send-area .input-area .emots-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 44px;
+    background: #141c1f;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+
+.chat .send-area .input-area .chat-input {
+    width: calc(100% - 44px);
+    background: #182023;
+    border: 0;
+    outline: 0;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #fefefe;
+    font-family: Titillium,sans-serif;
+    font-size: 14px;
+}
+
+#chat {
+    height: 101.4%;
+}
+
+.chat .send-area {
+    display: -ms-flexbox;
+    display: flex;
+    height: 57px;
+    border-top: 2px solid #111618;
+    background: #111618;
+}
+
+.center {
+    width: calc(100% - 250px - 300px);
+}
+
+body {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased!important;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px!important;
+    text-rendering: optimizeLegibility!important;
+}
+
+.menu-name {
+    background: #111618;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 0;
+}
+
+#sidebar-wrapper ul {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+
+nav {
+    width: 100%;
+    max-width: 250px !important;
+    min-width: 250px !important;
+    background: transparent !important;
+    overflow: hidden;
+    border-right: 1px solid transparent !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#sidebar-wrapper ul li a.expandable span.expanded-element {
+    margin-left: 20px;
+    display: none;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    padding-top: 5px;
+    padding-right: 20px;
+    float: right;
+}
+
+#sidebar-wrapper ul li {
+    background-color: #141a1d;
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #141a1d;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper ul li a.expandable {
+    outline: 0;
+    color: #fff;
+    text-decoration: none;
+    border-right: 4px solid transparent;
+    font-size: 14px;
+}
+
+.top-line {
+    position: fixed;
+    width: 5000px;
+    left: 0;
+    top: 0;
+    border-top: 5px solid #ffcc01;
+    z-index: 963;
+}
+
+.chat {
+    width: 300px;
+    background: #141a1d;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 99999;
+}
+
+#chat {
+    height: 100%;
+}
+
+.footer-text {
+    color: #2e3f46;
+    font-size: 13px;
+    margin: 17px auto;
+    text-align: center;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.roulette .roulette-wheel-outer .roulette-wheel .roulette-caret-down-left {
+    left: calc(50% - 63px);
+    transform: rotate(315deg);
+    top: 8px;
+    position: absolute;
+}
+.roulette .roulette-wheel-outer .roulette-wheel .roulette-caret-down-right {
+    left: calc(50% + 53px);
+    transform: rotate(45deg);
+    top: 8px;
+    position: absolute;
+}
+.roulette .roulette-wheel-outer .roulette-wheel .roulette-caret-up-left {
+    left: calc(50% - 63px);
+    transform: rotate(45deg);
+    bottom: 8px;
+    position: absolute;
+}
+.roulette .roulette-wheel-outer .roulette-wheel .roulette-caret-up-right {
+    left: calc(50% + 53px);
+    transform: rotate(315deg);
+    bottom: 8px;
+    position: absolute;
+}

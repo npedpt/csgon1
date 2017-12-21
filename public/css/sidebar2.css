@@ -1,0 +1,350 @@
+#wrapper{padding-left:75px;}#wrapper.toggled{padding-left:75px;}#sidebar-wrapper{position:fixed;top:50px;left:75px;width:75px;height:calc(100% - 50px);margin-left:-75px;overflow-y:auto;background:#181B24;z-index:10000;}@media(min-width:992px) and (max-width:1366px) {
+  #sidebar-wrapper:hover {
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+  }
+}
+
+#sidebar-wrapper:hover {
+  width: 250px;
+}
+
+#page-content-wrapper {
+    width: calc(100% - 75px);
+    height: calc(100% - 100px);
+    position: absolute;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+@media(max-width:991px) {
+  #page-content-wrapper {
+    margin-top: -25px !important;
+  }
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -75px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+		height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+		line-height: 42px;
+}
+
+@media (min-height: 720px) {
+  .sidebar-nav li a {
+    line-height: 50px;
+  }
+}
+
+#sidebar-wrapper.collapsing .sidebar-nav li a,
+#sidebar-wrapper.collapse .sidebar-nav li a {
+  line-height: 50px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width: 992px) {
+  #sidebar-wrapper {
+    display: block;
+    height: 100% !important
+  }
+}
+
+@media(min-width:1366px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 75px;
+    }
+
+    #page-content-wrapper {
+        width: 100%;
+        padding: 0px 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:992px) {
+  #wrapper {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  #sidebar-wrapper {
+    position: static;
+    height: 0px;
+    width: calc(100% + 15px) !important;
+    margin-left: -15px !important;
+    margin-top: 50px;
+    z-index: 10000;
+  }
+
+  #sidebar-wrapper.collapsing {
+    overflow: hidden;
+  }
+
+  #sidebar-wrapper.collapse {
+    height: initial;
+    overflow: hidden;
+  }
+
+  #sidebar-wrapper > .sidebar-nav {
+    position: static;
+    width: calc(100% - 15px);
+    height: initial;
+    margin-left: 15px !important;
+  }
+
+  #sidebar-wrapper > .sidebar-nav li.account {
+    display: none;
+  }
+
+  #sidebar-wrapper > .sidebar-nav li a {
+    width: 100%;
+  }
+
+  #page-content-wrapper {
+    width: 100% !important;
+    height: auto;
+    position: static;
+  }
+}
+
+.sidebar-nav > li.divider {
+  display: none;
+  height: 54px;
+  text-align: right;
+  background-color: #15181F;
+}
+
+#sidebar-wrapper.collapse > .sidebar-nav > li.divider,
+#sidebar-wrapper.collapsing > .sidebar-nav > li.divider {
+  display: block;
+}
+
+@media (min-height: 875px) and (min-width:1366px) {
+  .sidebar-nav > li.divider {
+    display: block;
+  }
+}
+
+.sidebar-nav > li.divider > span {
+  margin-right: 25px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+  line-height: 54px;
+  color: #313543;
+}
+
+.sidebar-nav > li:not(.sidebar-brand) > a > .icon {
+	display: inline-block;
+	width: 75px;
+	text-align: center;
+	padding: 15px 0px;
+	line-height: 50px;
+  color: #313543;
+  background-color: #15181F;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+#sidebar-wrapper.collapsing .sidebar-nav > li:not(.sidebar-brand) > a > .icon,
+#sidebar-wrapper.collapse .sidebar-nav > li:not(.sidebar-brand) > a > .icon {
+  padding: 19px 0px;
+}
+
+@media (min-height: 720px) {
+  .sidebar-nav > li:not(.sidebar-brand) > a > .icon {
+    padding: 19px 0px;
+  }
+}
+
+#sidebar-wrapper:hover:not(.collapse):not(.collapsing) > .sidebar-nav > li:not(.sidebar-brand) > a > .icon {
+  background-color: #1C1F29;
+}
+
+@media(min-width:1366px) {
+  .sidebar-nav > li:not(.sidebar-brand) > a > .icon {
+    background-color: #1C1F29;
+  }
+}
+
+.icon-facebook {
+  color: #3b5998 !important;
+}
+
+.icon-twitter {
+  color: #326ada !important;
+}
+
+.icon-steam {
+  color: #444444 !important;
+}
+
+.sidebar-nav > li.active:not(.sidebar-brand) > a > .icon {
+	color: #DF3D62;
+	border-left: 3px solid #DF3D62;
+}
+
+.sidebar-nav > li:not(.sidebar-brand) > a > .icon > i {
+	font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar-nav > li.active:not(.sidebar-brand) > a > .icon > i {
+	position: relative;
+  left: -2px;
+}
+
+.sidebar-nav > li:not(.sidebar-brand) > a > span {
+	float: right;
+	margin-right: 25px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.sidebar-nav > li.bounce > a > span {
+  color: #E5A226;
+}
+
+.sidebar-nav > li.bounce:not(.active) > a > span {
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+.sidebar-nav > li.account > .avatar {
+  display: inline-block;
+  width: 75px;
+  padding: 12.5px;
+  background-color: #1C1F29;
+}
+
+.sidebar-nav > li.account > .avatar > img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.sidebar-nav > li.account > .details {
+  float: right;
+  width: 175px;
+  height: 75px;
+  text-align: right;
+  padding: 10px 25px;
+}
+
+.sidebar-nav > li.account > .details > span {
+  display: block;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.sidebar-nav > li.account > .details > span.credits {
+  float: right;
+  padding: 2px 5px;
+  font-size: 13px;
+  background-color: #28AC73;
+  border-radius: 5px;
+}
+
+.sidebar-nav > li.footer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+@media(min-width:1366px) {
+  .sidebar-nav > li.footer {
+    display: block;
+  }
+}
+
+.sidebar-nav > li.footer > p {
+  color: #313543;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-10px);}
+ 60% {-webkit-transform: translateY(-5px);}
+}
+
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-10px);}
+ 60% {-moz-transform: translateY(-5px);}
+}
+
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-10px);}
+ 60% {-o-transform: translateY(-5px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-10px);}
+ 60% {transform: translateY(-5px);}
+}

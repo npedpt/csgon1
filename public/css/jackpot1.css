@@ -1,0 +1,12 @@
+.roulette .balance-latest {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    background: rgb(29, 29, 29);
+    background: rgba(29, 29, 29, 0.85);
+    height: 70px;
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 2px solid #161616;
+    border-bottom: 2px solid #ffcc01;
+}

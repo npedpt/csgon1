@@ -1,0 +1,42 @@
+{
+  "name": "laravel-nodejs",
+  "version": "0.0.1",
+  "description": "This was leaked many month ago, when one guy stole it from me ",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuz1k/csgon1.git"
+  },
+  "keywords": [
+    "csgon1",
+    "tuz1k",
+    "csgo",
+    "laravel"
+  ],
+  "author": "TUZ1K || http://steamcommunity.com/id/tuz1k/",
+  "dependencies": {
+    "fs":"*",
+    "socket.io":"*",
+    "crypto":"*",
+    "request":"*",
+    "mysql":"*",
+    "sha256":"*",
+    "math":"*",
+    "randomstring":"*",
+    "http":"*",
+    "eyes":"*",
+    "xml2js":"*",
+    "steamcommunity":"*",
+    "steam-user":"*",
+    "steam-totp":"*",
+    "steam-tradeoffer-manager":"*"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuz1k/csgon1/issues"
+  },
+  "homepage": "https://github.com/tuz1k/csgon1#readme"
+}
